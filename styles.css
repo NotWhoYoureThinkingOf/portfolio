@@ -3,6 +3,9 @@
 html, body{
   font-family: 'Questrial', sans-serif;
 }
+html{
+  overflow:hidden;
+}
 
 .main-bg{
   height:100vh;
@@ -12,7 +15,7 @@ html, body{
   background-position:center center;
   background-repeat:no-repeat;
   position:fixed;
-  transition: all .6s ease-in-out;
+  transition: all 1s ease-in-out;
   z-index:5;
 }
 
@@ -226,3 +229,74 @@ html, body{
   cursor:pointer;
 }
 
+/********************************************/
+
+.about{
+  z-index: 2;
+  position:relative;
+}
+
+.about .black-bg{
+  height:100vh;
+  width:80%;
+  background:#1b1b1b;
+  transform:skewX(-15deg);
+  position:absolute;
+}
+
+.about .about-links{
+  position:absolute;
+  z-index:6;
+  height:100vh;
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-top:70px;
+}
+
+.about .about-links .links{
+  z-index:6;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.about .about-links .links a{
+  color:white;
+  text-decoration: none;
+  font-size:1.8rem;
+  transform:rotate(90deg)
+}
+
+.about .about-links .links a:hover{
+  color: rgb(101, 255, 204);
+  text-shadow: 2px 2px 5px rgba(0,0,0,.7);
+}
+
+.about .profile-pic{
+  position:absolute;
+  left:320px;
+  z-index:3;
+  opacity:0;
+  top:20px;
+}
+
+.about .description {
+  display:flex;
+  justify-content:center;
+  height:100vh;
+}
+
+.about .description h2{
+  opacity:0;
+  font-size:5rem;
+  padding-top:30px;
+  text-transform: capitalize;
+}
+
+.about .description .personal-description{
+  position:absolute;
+  top:30%;
+  left:62%;
+  font-size:2rem;
+}

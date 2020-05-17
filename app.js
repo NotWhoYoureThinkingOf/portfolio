@@ -62,6 +62,14 @@ downArrow.addEventListener('mouseup', () => {
 
 aboutBtn.addEventListener('click', (e) => {
     e.preventDefault()
+    projects.forEach((project) => {
+        project.style.pointerEvents = 'none';
+    })
+    mainBg.style.pointerEvents = 'none'; 
     mainBg.style.transform = 'translateY(-100%)'
+    gsap.to('.about-title', {duration:2, x:400, delay: .5, ease: 'power2.out', opacity:1});
+    gsap.fromTo('.black-bg', {x:-1000}, {x:-890, duration: 1.5})
+    gsap.to('.profile-pic', {opacity:1, duration:1.5})
 })
+
 
