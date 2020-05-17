@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+html, body{
+  font-family: 'Questrial', sans-serif;
+}
+
+.main-bg{
+  height:100vh;
+  width:100%;
+  background-image:url('https://www.adevia.com/wp-content/uploads/2018/04/115323-most-popular-background-white-2400x1800.jpg');
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  position:fixed;
+  transition: all .6s ease-in-out;
+  z-index:5;
+}
+
+.main-bg .container{
+  display:flex;
+}
+
+.main-bg .info{
+  height:100vh;
+  width:35%;
+  /* box-shadow: 5px 5px 30px rgba(0,0,0,.2); */
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items:center;
+  position:relative;
+  padding: 100px 0;
+}
+
+.main-bg .name-area{
+  position:relative;
+  color:#1b1b1b;
+  padding:10px;
+}
+
+.main-bg .name-area .name{
+  font-size:3rem;
+  font-weight:bold;
+}
+
+.main-bg .info .job-title-area{
+  position:relative;
+  color:rgba(101, 255, 204, 0.808);
+  display:flex;
+  justify-content: center;
+}
+
+.main-bg .info .job-title-area h3{
+  font-size:2rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,.5)
+}
+
+.main-bg .info .links{
+  display:flex;
+  flex-direction:column;
+  color:#1b1b1b;
+  padding-bottom:170px;
+  font-size:1.5rem;
+}
+
+.main-bg .info .links a{
+  margin-bottom:30px;
+  cursor:pointer;
+  transition: all .1s ease-in-out;
+  padding:5px;
+  text-decoration: none;
+  color:#1b1b1b;
+}
+
+.main-bg .info .links a:hover{
+  color: rgb(101, 255, 204);
+  text-shadow: 2px 2px 5px rgba(0,0,0,.7);
+}
+
+.main-bg .container .projects-area{
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  position:relative;
+}
+
+.main-bg .container .projects-area .up-arrow{
+  position:absolute;
+  font-size:4rem;
+  top:0;
+  z-index:10;
+  cursor:pointer;
+  padding:0 20px;
+}
+
+.main-bg .container .projects-area .down-arrow{
+  position:absolute;
+  font-size:4rem;
+  bottom:0;
+  z-index:10;
+  cursor:pointer;
+  padding:0 20px;
+}
+
+.projects-area{
+  height:100vh;
+}
+
+.projects-area .projects-container{
+ width:100%;
+ height:100vh;
+}
+
+.projects-area .projects-container .projects-list{
+ position:relative;
+ margin:0;
+ padding:0;
+ list-style:none;
+}
+
+.projects-area .projects-container .projects-list .project{
+  position:absolute;
+  width:100%;
+  height:100vh; 
+  left:0;
+  transition: all 0.6s ease-in-out;
+}
+
+.projects-area .projects-container .projects-list .project .project-caption{
+  position:absolute;
+  top:45%;
+  left:15%;
+  font-size:5rem;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+  opacity:0;
+  transition: opacity .4s ease-in-out;
+  pointer-events: none;
+}
+
+.projects-area .projects-container .projects-list .project .project-link{
+  position:relative;
+  display: inline-block;
+  height:100%;
+  background:#393341;
+  overflow:hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+  /* width: 100%;  */
+  height:80%;
+  width:100%;
+  top:50%;
+  left:30px;
+  transform: translateY(-50%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image:url(./food-transport.png);
+  background-position: top center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  /* pointer-events: none; */
+  display:flex;
+  justify-content: center;
+  transition:filter .4s ease-in-out;
+}
+
+.projects-area .projects-container .projects-list .project .project-link:hover{
+  filter:brightness(30%) blur(2px);
+}
+
+.prev{
+  transform:translateY(-100%);
+  opacity:0;
+}
+
+.active{
+  /* position:relative; */
+  transform:translateY(0%);
+  opacity:1;
+}
+
+.next{
+  position:absolute;
+  transform:translateY(100%);
+  opacity:0;
+}
+
+.third{
+  position:absolute;
+  transform:translateY(200%);
+  opacity:0;
+}
+
+.projects-area .projects-container .project .project-title{
+  position:absolute;
+  z-index:10;
+  font-size:6rem;
+  top:42%;
+  color:white;
+  left:6%;
+  font-weight:bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,.7);
+  opacity:0;
+  transform:translateY(5%);
+  transition:all .5s ease-in-out;
+}
+
+.show-title{
+  transform:translateY(0);
+  opacity:1 !important;
+}
+
+.projects-area .projects-container .project .button{
+  position:absolute;
+  z-index: 10;
+  background: rgba(101, 255, 204, 0.95);
+  padding:20px;
+  border-radius:20px;
+  font-size:1.1rem;
+  top:84%;
+  left:42.5%;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,.4);
+  cursor:pointer;
+}
+
