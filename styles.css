@@ -915,8 +915,16 @@ body{
     display:flex;
   }
 
+  .main-bg .info .mobile-menu .menu{
+    font-size:2rem;
+  }
+
   .main-bg .info {
     padding: 0 20px;
+  }
+
+  .main-bg .menu-bg .menu-links .links-container .about{
+    height:auto !important;
   }
 
   .main-bg .container .projects-area .up-arrow {
@@ -929,6 +937,18 @@ body{
     font-size:2.5rem;
   }
 
+  .main-bg .container .projects-area {
+    height:85vh !important;
+  }
+
+  .main-bg .container .projects-area .projects-container .projects-area{
+    height:85vh;
+  }
+
+  .main-bg .container .projects-area .projects-container  .projects-list .project{
+    height:100vh;
+  }
+
   .projects-area .projects-container .projects-list .project .project-link-active{
     background-image:url(./greenyard-mobile-fixed.png);
     box-shadow:none;
@@ -936,6 +956,9 @@ body{
     background-size: auto;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    height:100%;
+    transform:scale(1);
+    top:9%;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-next{
@@ -944,7 +967,10 @@ body{
     background-color:transparent;
     background-size: auto;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0  
+    border-bottom-left-radius: 0;
+    height:100%;
+    transform:scale(1);
+    top:9%;  
   }
   
   .projects-area .projects-container .projects-list .project .project-link-prev{
@@ -953,15 +979,20 @@ body{
     background-color:transparent;
     background-size: auto;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0    
+    border-bottom-left-radius: 0;
+    height:100%;
+    transform:scale(1);
+    top:9%;    
   }
 
-  .about {
+  #about-section{
     z-index: 2;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow:hidden;
+    height:100vh;
   }
 
   .about .black-bg {
@@ -994,13 +1025,13 @@ body{
 
   .about .mobile-menu .menu{
     padding:20px;
-    font-size:1.8rem;
+    font-size:2rem;
   }
 
   .about .profile-pic {  
-    right: -44px;
+    right: -41px;
     z-index: 3;
-    bottom: -560px;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     width: 450px;
@@ -1009,6 +1040,7 @@ body{
   }
 
   .about .profile-pic img{
+    width:450px
   }
 
   .about .description {
@@ -1038,9 +1070,9 @@ body{
   }
 
   .about .description .personal-description {
-    top: 20%;
+    top: auto;
     left: auto;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 84%;
     line-height: 1.5;
     position:relative;
@@ -1095,16 +1127,50 @@ body{
   }
 
   .about .profile-pic {
-    right: -33px;
-    bottom:-436px;
-    width:350px;
+    right: -15px;
+    bottom:0px;
+    width:277px;
+  }
+
+  .about .profile-pic .profile-img{
+    width: 291px;
   }
 }
 
-@media only screen and (max-width:320px){
+@media only screen and (max-width:414px){
+  .about .profile-pic {
+    right: -34px;
+    bottom:0px;
+    width:277px;
+  }
+
+  .about .profile-pic .profile-img{
+    width: 260px;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-active {
+    height: 100%;
+    transform: scale(.7);
+    top: -5%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-prev {
+    height: 100%;
+    transform: scale(.7);
+    top: -5%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-next {
+    height: 100%;
+    transform: scale(.7);
+    top: -5%;
+  }
+}
+
+@media only screen and (max-width:390px){
   .about .description .about-title{
     font-size:3rem;
-    padding-top:10px;
+    padding-top:25px;
   }
 
   .about .description .personal-description{
@@ -1112,8 +1178,135 @@ body{
   }
 
   .about .profile-pic {
-    right: -33px;
-    bottom:-348px;
+    right: -37px;
+    bottom:0px;
     width:277px;
   }
+
+  .about .profile-pic .profile-img{
+    width: 260px;
+  }
 }
+
+
+/* iphone 6/7/8/SE */
+@media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio: 2){
+  .projects-area .projects-container .projects-list .project .project-link-active {
+    height: 100%;
+    transform: scale(.65);
+    top: -8%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-prev {
+    height: 100%;
+    transform: scale(.65);
+    top: -8%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-next {
+    height: 100%;
+    transform: scale(.65);
+    top: -8%;
+  }
+
+  .about .description .personal-description {
+    font-size: 1rem;
+    width: 84%;
+    line-height: 1.3;
+    position: relative;
+}
+}
+
+/* iphone 6+/7+/8+ */
+@media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio: 3){
+  .projects-area .projects-container .projects-list .project .project-link-active {
+    height: 100%;
+    transform: scale(.7) !important;
+    top: -5% !important;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-prev {
+    height: 100%;
+    transform: scale(.7) !important;
+    top: -5% !important;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-next {
+    height: 100%;
+    transform: scale(.7) !important;
+    top: -5% !important;
+  }
+
+  .about .description .personal-description {
+    font-size: 1rem;
+    width: 84%;
+    line-height: 1.5 !important;
+}
+}
+
+/* iphone x*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3){
+  .projects-area .projects-container .projects-list .project .project-link-active {
+    height: 100%;
+    transform: scale(.8);
+    top: -1%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-prev {
+    height: 100%;
+    transform: scale(.8);
+    top: -1%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-next {
+    height: 100%;
+    transform: scale(.8);
+    top: -1%;
+  }
+
+  .about .description .personal-description {
+    font-size: 1rem;
+    width: 84%;
+    line-height: 2;
+}
+}
+
+/* iphone 5s */
+@media only screen 
+  and (max-width: 320px) {
+    .main-bg .container .projects-area {
+      height: 81vh !important;
+    }
+
+    .projects-area .projects-container .projects-list .project .project-link-active {
+      height: 100%;
+      transform: scale(.6);
+      top: -10%;
+    }
+  
+    .projects-area .projects-container .projects-list .project .project-link-prev {
+      height: 100%;
+      transform: scale(.6);
+      top: -10%;
+    }
+  
+    .projects-area .projects-container .projects-list .project .project-link-next {
+      height: 100%;
+      transform: scale(.6);
+      top: -10%;
+    }
+
+  .about .profile-pic {
+    right: -58px;
+    bottom:0px;
+    width:277px;
+  }
+
+  .about .profile-pic .profile-img{
+    width: 200px;
+  }
+}
+
