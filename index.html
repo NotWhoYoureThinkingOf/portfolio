@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Reset.css">
+    <link rel="stylesheet" href="./reset.css">
     <script
       src="https://kit.fontawesome.com/82d9e1897d.js"
       crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('user_te7dBudEMIBrir5T4OCbm');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('gmail', 'contact_form', document.getElementById('contact-form'));
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Basic</title>
 </head>
 <body>
     <section class="main-bg">
+      <div class="main-black-bg"></div>
         <div class="container">
           <section class="info">
             <div class="info-container">
@@ -24,9 +42,33 @@
               </div>
             </div>
             <div class="links">
-              <a href="www.google.com">Work</a>
+              <a href="#" class="work-btn">Work</a>
               <a href="#" class="about-btn">About</a>
-              <a href="www.google.com">Contact</a>
+              <div class="main-contact-btn"><p>Contact</p></div>
+            </div>
+            <div class="mobile-menu">
+              <div class="menu">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </section>
+          <section class="menu-bg">
+            <div class="block one"></div>
+            <div class="block two"></div>
+            <div class="block three"></div>
+            <div class="block four"></div>
+            <div class="block five"></div>
+            <div class="block six"></div>
+            <div class="block seven"></div>
+            <div class="block eight"></div>
+            <div class="block nine"></div>
+            <div class="block ten"></div>
+            <div class="menu-links">
+              <div class="link-container">
+                <div class="link work">Work</div>
+                <div class="link about">About</div>
+                <div class="link contact">Contact</div>
+              </div>
             </div>
           </section>
           <section class="projects-area">
@@ -36,20 +78,24 @@
             <div class="projects-container">
               <ul class="projects-list">
                 <li class="project active" id="one">
-                  <a href="www.google.com" class="project-link">
+                  <a href="https://foodtransport.netlify.app/" class="project-link-active">
                     <figure></figure>                    
                   </a> 
                   <div class="project-caption">Food Transportation Website</div>        
                 </li>
+
                 <li class="project next" id="two">
-                  <a href="www.google.com" class="project-link">
-                    <figure class="project-caption"></figure>
-                  </a>         
+                  <a href="https://gravityclothing.netlify.app/" class="project-link-next">
+                    <figure></figure>
+                  </a>
+                  <div class="project-caption-next">Clothing Store Website</div>         
                 </li>
+
                 <li class="project prev" id="three">
-                  <a href="www.google.com" class="project-link">
-                    <figure class="project-caption"></figure>
-                  </a>         
+                  <a href="https://acdev-store.myshopify.com/" class="project-link-prev">
+                    <figure></figure>
+                  </a>
+                  <div class="project-caption-prev">Shopify Pet Store Theme</div>         
                 </li>
               </ul>
             </div>
@@ -61,23 +107,77 @@
       </section>
       <section class="about">
         <div class="black-bg"></div>
+        <div class="bg-highlight"></div>
         <div class="about-links">
           <div class="links">
-            <a href="www.google.com">Work</a>
+            <a href="#" class="work-btn">Work</a>
             <a href="#" class="about-btn">About</a>
-            <a href="www.google.com">Contact</a>
+            <div class="contact-btn"><p>Contact</p></div>
           </div>
         </div>
+        <div class="mobile-menu">
+          <div class="menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <section class="menu-bg">
+          <div class="block one"></div>
+          <div class="block two"></div>
+          <div class="block three"></div>
+          <div class="block four"></div>
+          <div class="block five"></div>
+          <div class="block six"></div>
+          <div class="block seven"></div>
+          <div class="block eight"></div>
+          <div class="block nine"></div>
+          <div class="block ten"></div>
+          <div class="menu-links">
+            <div class="link-container">
+              <div class="link work">Work</div>
+              <div class="link about">About</div>
+              <div class="link contact">Contact</div>
+            </div>
+          </div>
+        </section>
         <div class="profile-pic">
-          <img src="profilePicTemp.png" alt="profile-pic">
+          <img src="profilePic.png" alt="profile-pic">
         </div>
         <div class="description">
           <div>
-            <h2 class="about-title">about me</h2>
+            <h2 class="about-title">Hello</h2>
           </div>
-          <div class="personal-description">I'm just some fuckin guy</div>
+          <div class="personal-description"><p class="first">My name's Adam and I'm a self taught web developer. Having past experience in the music world, I love being able to create and bring my ideas to life.</p>
+          <p class="second">Technologies I've used include HTML, CSS, Bootstrap, Javascript, JQuery, React, GSAP, Liquid, Shopify, Wordpress, Photoshop and whatever else comes my way. I love to learn and push myself to grow.</p>
+          </div>
+        </div>        
+      </section>
+      <section class="contact-modal">
+        <div class="dark-bg"></div>
+        <div class="contact-container">
+          <div class="contact">
+            <form id="contact-form" class="contact-form">
+              <input type="hidden" name="contact_number">
+              <div class="name-container">
+                <label>Name</label>
+                <input type="text" name="user_name">
+              </div>
+              <div class="email-container">
+                <label>Email</label>
+                <input type="email" name="user_email">
+              </div>
+              <div class="message-container">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+              </div>
+              <input class="submit" type="submit" value="Send">
+            </form>
+          </div> 
         </div>
-        
+        <div class="message-box">
+          <div class="message-container">
+            <div class="message">Message Sent!</div>
+          </div>
+        </div>
       </section>
       <script src="app.js" rel="text/javascript"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
