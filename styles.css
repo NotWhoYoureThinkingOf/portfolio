@@ -955,6 +955,10 @@ body{
 
 /* switch projects to mobile views */
 @media only screen and (max-width:768px){
+  .main-bg{
+    height:100%;
+  }
+
   .main-bg .info .links{
     display:none;
   }
@@ -972,12 +976,29 @@ body{
   }
 
   .main-bg .menu-bg .menu-links .links-container .about{
+    height:100%;
+  }
+
+  .menu-bg{
+    height:100%;
+  }
+
+  .menu-bg .block {
+    height: 10%;
+  }
+
+  .menu-links {
+    height: 100%;
+  }
+
+  .main-bg .menu-bg .menu-links .links-container .about{
     height:auto !important;
   }
 
   .main-bg .container .projects-area .up-arrow {
     color: white;
     font-size:2.5rem;
+    transform: translateY(-41px)
   }
 
   .main-bg .container .projects-area .down-arrow {
@@ -986,15 +1007,24 @@ body{
   }
 
   .main-bg .container .projects-area {
-    height:85vh !important;
+    height:85% !important;
   }
 
-  .main-bg .container .projects-area .projects-container .projects-area{
-    height:85vh;
+  .main-bg .container .projects-area{
+    min-height: 100%;
+    height: 676px!important;
+  }
+
+  .main-bg .container .projects-area .projects-container  .projects-list{
+    height:100%;
   }
 
   .main-bg .container .projects-area .projects-container  .projects-list .project{
-    height:100vh;
+    height:100%;
+  }
+
+  .main-bg .container .projects-area .projects-container .projects-list .project {
+    min-height: 100% !important;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-active{
@@ -1033,6 +1063,8 @@ body{
     top: -4%;    
   }
 
+  
+
   #about-section{
     z-index: 2;
     position: relative;
@@ -1040,11 +1072,11 @@ body{
     flex-direction: column;
     align-items: center;
     overflow:hidden;
-    height:100vh;
+    height:100%;
   }
 
   .about .black-bg {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: #1b1b1b;
     transform: skewX(15deg);
@@ -1055,7 +1087,7 @@ body{
 
   .about .bg-highlight{
     z-index:0;
-    height:100vh;
+    height:100%;
     width:100%;
     background: rgb(95, 230, 185);
     opacity:1;
@@ -1063,6 +1095,7 @@ body{
 
   .about .about-links {
     display: none;
+    height:100%
   }
 
   .about .mobile-menu{
@@ -1144,6 +1177,11 @@ body{
 
   .contact-modal{
     top:0;
+    height:100%;
+  }
+
+  .message-box {
+    height: 100%;
   }
 }
 
