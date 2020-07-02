@@ -1244,9 +1244,9 @@ body{
   }
 
   .about .profile-pic .profile-img{
-    width: 254px;
-height: 370px;
-max-height: 370px;
+    width: 210px;
+    height: 338px;
+    max-height: 318px;
   }
 }
 
@@ -1285,9 +1285,9 @@ max-height: 370px;
 }
 
 .about .profile-pic .profile-img{
-  width: 254px;
-height: 370px;
-max-height: 370px;
+  width: 210px;
+    height: 338px;
+    max-height: 318px;
 }
 
 
@@ -1326,9 +1326,9 @@ max-height: 370px;
 }
 
 .about .profile-pic .profile-img{
-  width: 254px;
-height: 370px;
-max-height: 370px;
+  width: 210px;
+    height: 338px;
+    max-height: 318px;
 }
 }
 
