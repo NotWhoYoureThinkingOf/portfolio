@@ -58,10 +58,12 @@ html, body{
 }
 html{
   overflow:hidden;
+  height: -webkit-fill-available;
 }
 
 body{
   width:100%;
+  min-height: -webkit-fill-available;
 }
 
 .main-bg{
@@ -1001,8 +1003,8 @@ body{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height:100%;
-    transform:scale(1);
-    top:9%;
+    transform: scale(.75);
+    top: -4%;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-next{
@@ -1013,8 +1015,8 @@ body{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height:100%;
-    transform:scale(1);
-    top:9%;  
+    transform: scale(.75);
+    top: -4%;  
   }
   
   .projects-area .projects-container .projects-list .project .project-link-prev{
@@ -1025,8 +1027,8 @@ body{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height:100%;
-    transform:scale(1);
-    top:9%;    
+    transform: scale(.75);
+    top: -4%;    
   }
 
   #about-section{
@@ -1073,7 +1075,7 @@ body{
   }
 
   .about .profile-pic {  
-    right: -41px;
+    right: -103px;
     z-index: 3;
     bottom: 0px;
     display: flex;
@@ -1084,7 +1086,7 @@ body{
   }
 
   .about .profile-pic img{
-    width:450px
+    width:290px
   }
 
   .about .description {
@@ -1116,7 +1118,7 @@ body{
   .about .description .personal-description {
     top: auto;
     left: auto;
-    font-size: 1.4rem;
+    font-size: 1rem;
     width: 84%;
     line-height: 1.5;
     position:relative;
