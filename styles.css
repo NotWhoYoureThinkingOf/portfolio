@@ -1074,6 +1074,8 @@ body{
     height:100%;
     transform: scale(.9);
     min-height: 353px;
+    max-width: 200px;
+    width: 100%;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-next{
@@ -1094,6 +1096,8 @@ body{
     height:100%;
     transform: scale(.9);
     min-height: 353px;
+    max-width: 200px;
+    width: 100%;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-prev{
@@ -1114,6 +1118,8 @@ body{
     height:100%;
     transform: scale(.9);
     min-height: 353px;
+    max-width: 200px;
+    width: 100%;
   }
 
   
