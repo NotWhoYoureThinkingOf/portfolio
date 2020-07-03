@@ -1342,21 +1342,12 @@ body{
 /* iphone 6/7/8/SE */
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio: 2){
   .projects-area .projects-container .projects-list .project .project-link-active {
-    height: 100%;
-    transform: scale(.65);
-    top: -8%;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-prev {
-    height: 100%;
-    transform: scale(.65);
-    top: -8%;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-next {
-    height: 100%;
-    transform: scale(.65);
-    top: -8%;
   }
 
   .about .description .personal-description {
@@ -1384,21 +1375,12 @@ body{
 /* iphone 6+/7+/8+ */
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio: 3){
   .projects-area .projects-container .projects-list .project .project-link-active {
-    height: 100%;
-    transform: scale(.7) !important;
-    top: -5% !important;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-prev {
-    height: 100%;
-    transform: scale(.7) !important;
-    top: -5% !important;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-next {
-    height: 100%;
-    transform: scale(.7) !important;
-    top: -5% !important;
   }
 
   .about .description .personal-description {
@@ -1426,21 +1408,12 @@ body{
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3){
   .projects-area .projects-container .projects-list .project .project-link-active {
-    height: 100%;
-    transform: scale(.8);
-    top: -1%;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-prev {
-    height: 100%;
-    transform: scale(.8);
-    top: -1%;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-next {
-    height: 100%;
-    transform: scale(.8);
-    top: -1%;
   }
 
   .about .description .personal-description {
@@ -1458,21 +1431,12 @@ body{
     }
 
     .projects-area .projects-container .projects-list .project .project-link-active {
-      height: 100%;
-      transform: scale(.6);
-      top: -10%;
     }
   
     .projects-area .projects-container .projects-list .project .project-link-prev {
-      height: 100%;
-      transform: scale(.6);
-      top: -10%;
     }
   
     .projects-area .projects-container .projects-list .project .project-link-next {
-      height: 100%;
-      transform: scale(.6);
-      top: -10%;
     }
 
   .about .profile-pic {
