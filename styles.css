@@ -1073,6 +1073,7 @@ body{
   .projects-area .projects-container .projects-list .project .project-link-active .project-image-container .project-image{
     height:100%;
     transform: scale(.9);
+    min-height: 353px;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-next{
@@ -1092,6 +1093,7 @@ body{
   .projects-area .projects-container .projects-list .project .project-link-next .project-image-container .project-image{
     height:100%;
     transform: scale(.9);
+    min-height: 353px;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-prev{
@@ -1111,6 +1113,7 @@ body{
   .projects-area .projects-container .projects-list .project .project-link-prev .project-image-container .project-image{
     height:100%;
     transform: scale(.9);
+    min-height: 353px;
   }
 
   
