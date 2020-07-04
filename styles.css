@@ -1292,7 +1292,7 @@ body{
 
 @media only screen and (max-width:414px){
   .about .profile-pic {
-    right: -34px;
+    right: -27px;
     bottom:0px;
     width:277px;
   }
@@ -1314,7 +1314,7 @@ body{
   }
 
   .about .profile-pic {
-    right: -37px;
+    right: -27px;
     bottom:0px;
     width:277px;
   }
@@ -1340,7 +1340,7 @@ body{
   }
 
   .about .profile-pic {
-    right: 0;
+    right: -27px;
     bottom:0px;
     width:auto;
     height:300px;
@@ -1373,7 +1373,7 @@ body{
   }
 
   .about .profile-pic {
-    right: 0;
+    right: -27px;
     bottom:0px;
     width:auto;
     height:300px;
@@ -1409,7 +1409,7 @@ body{
 }
 
 .about .profile-pic {
-  right: 0;
+  right: -27px;
   bottom:0px;
   width:auto;
   height:300px;
@@ -1463,7 +1463,7 @@ body{
     }
 
   .about .profile-pic {
-    right: -58px;
+    right: -27px;
     bottom:0px;
     width:277px;
   }
