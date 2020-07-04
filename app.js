@@ -222,6 +222,22 @@ aboutMenuContact.addEventListener('click', () => {
 })
 
 
+const mobileModeOn = () =>{
+    if (window.innerWidth <= 768) {
+        window.onresize = () => {
+            document.body.height = window.innerHeight;
+        }
+        
+        window.onresize();
+    }
+}
+
+mobileModeOn();
+window.addEventListener('resize', (e) =>{
+    mobileModeOn();
+})
+
+
 
 
 
