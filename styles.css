@@ -1134,12 +1134,12 @@ body{
 
   #about-section{
     z-index: 2;
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow:hidden;
-    height:100%;
+    height:100% !important;
   }
 
   .about .black-bg {
