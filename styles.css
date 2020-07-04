@@ -967,6 +967,11 @@ body{
 
 /* switch projects to mobile views */
 @media only screen and (max-width:768px){
+  body{
+    height:100%;
+    max-height:100%;
+  }
+
   .main-bg{
     height:100%;
   }
