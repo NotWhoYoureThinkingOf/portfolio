@@ -1067,12 +1067,14 @@ body{
 
   .projects-area .projects-container .projects-list .project .project-link-active .project-image-container{
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items:center;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-active .project-image-container .project-image{
     height:100%;
     min-height: 353px;
+    max-height:353px;
     max-width: 200px;
     width: 100%;
   }
@@ -1088,12 +1090,14 @@ body{
 
   .projects-area .projects-container .projects-list .project .project-link-next .project-image-container{
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items:center;  
   }
 
   .projects-area .projects-container .projects-list .project .project-link-next .project-image-container .project-image{
     height:100%;
     min-height: 353px;
+    max-height:353px;
     max-width: 200px;
     width: 100%;
   }
@@ -1109,12 +1113,14 @@ body{
 
   .projects-area .projects-container .projects-list .project .project-link-prev .project-image-container{
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items:center; 
   }
 
   .projects-area .projects-container .projects-list .project .project-link-prev .project-image-container .project-image{
     height:100%;
     min-height: 353px;
+    max-height:353px;
     max-width: 200px;
     width: 100%;
   }
