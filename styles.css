@@ -1378,6 +1378,7 @@ body{
   width: 210px;
     height: 338px;
     max-height: 318px;
+    transform: scale(.8);
 }
 
 
@@ -1410,6 +1411,7 @@ body{
   width: 210px;
     height: 338px;
     max-height: 318px;
+    transform: scale(.8);
 }
 }
 
