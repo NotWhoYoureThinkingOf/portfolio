@@ -151,13 +151,13 @@ aboutBtn.addEventListener('click', (e) => {
         project.style.pointerEvents = 'none';
     })
     mainBg.style.pointerEvents = 'none'; 
-    mainBg.style.transform = 'translateY(-100%)'
-    gsap.fromTo('.description', {x:0, opacity:0}, {x:400, duration:2, ease:'power2.out', opacity:1})
+    mainBg.style.transform = 'translateY(-150%)'
+    gsap.fromTo('.description', {x:0, opacity:0}, {x:400, duration:1.35, ease:'power2.out', opacity:1})
     // gsap.to('.description', {duration:2, x:400, delay: .5, ease: 'power2.out', opacity:1});
     // gsap.fromTo('.black-bg', {x:-1000, }, {x:-890, duration: 2})
-    gsap.fromTo('.profile-pic', {opacity:0}, {opacity:1, duration:1.5})
+    gsap.fromTo('.profile-pic', {opacity:0}, {opacity:1, duration:1.2})
     // gsap.to('.profile-pic', {opacity:1, duration:2})
-    gsap.fromTo('.about-links',{y:400, opacity:0}, {y:0, duration:1.5, opacity:1})
+    gsap.fromTo('.about-links',{y:400, opacity:0}, {y:0, duration:1, opacity:1})
 })
 
 workBtn.addEventListener('click', (e) => {
@@ -169,7 +169,7 @@ workBtn.addEventListener('click', (e) => {
     mainBg.style.transform = 'translateY(0%)'
     gsap.fromTo('.profile-pic', {opacity:1}, {opacity:0, duration:1})
     gsap.fromTo('.about-links', {y:0}, {y:400, duration:2, opacity:0})
-    gsap.fromTo('.description', {opacity:1}, {opacity:0, duration:1.5})
+    gsap.fromTo('.description', {opacity:1}, {opacity:0, duration:1})
     
 })
 
