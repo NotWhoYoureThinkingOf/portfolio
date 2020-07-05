@@ -334,6 +334,22 @@ body{
   pointer-events: none;
 }
 
+.projects-area .projects-container .projects-list .project .tech{
+  position:absolute;
+  top:70%;
+  left:15%;
+  font-size:1.5rem;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+  opacity:0;
+  transition: opacity .4s ease-in-out;
+  pointer-events: none;
+}
+
+.projects-area .projects-container .projects-list .project .tech h2{
+  margin-bottom:10px;
+}
+
 .projects-area .projects-container .projects-list .project .project-caption-next{
   position:absolute;
   top:45%;
@@ -346,6 +362,22 @@ body{
   pointer-events: none;
 }
 
+.projects-area .projects-container .projects-list .project .tech-next{
+  position:absolute;
+  top:70%;
+  left:21.5%;
+  font-size:1.5rem;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+  opacity:0;
+  transition: opacity .4s ease-in-out;
+  pointer-events: none;
+}
+
+.projects-area .projects-container .projects-list .project .tech-next h2{
+  margin-bottom:10px;
+}
+
 .projects-area .projects-container .projects-list .project .project-caption-prev{
   position:absolute;
   top:45%;
@@ -356,6 +388,22 @@ body{
   opacity:0;
   transition: opacity .4s ease-in-out;
   pointer-events: none;
+}
+
+.projects-area .projects-container .projects-list .project .tech-prev{
+  position:absolute;
+  top:70%;
+  left:21.5%;
+  font-size:1.5rem;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+  opacity:0;
+  transition: opacity .4s ease-in-out;
+  pointer-events: none;
+}
+
+.projects-area .projects-container .projects-list .project .tech-prev h2{
+  margin-bottom:10px;
 }
 
 .projects-area .projects-container .projects-list .project .project-link-active{
@@ -1242,18 +1290,51 @@ body{
     border-bottom-left-radius: 0;
   }
 
+  .projects-area .projects-container .projects-list .project .text-container{
+    position: absolute;
+    bottom:54px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events:none;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-caption{
+    opacity:1 !important;
+    background: rgba(0,0,0,.8);
+    height: 50px;
+    align-items: center;
+    top:60%;
+    position:relative;
+  }
+
+  .projects-area .projects-container .projects-list .project .tech {
+    opacity: 1 !important;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    top: 68.7%;
+    height:60px;
+    justify-content: center;
+    position:relative;
+  }
+
   .projects-area .projects-container .projects-list .project .project-link-active .project-image-container{
     display: flex;
     justify-content: center;
-    align-items:center;
   }
 
   .projects-area .projects-container .projects-list .project .project-link-active .project-image-container .project-image{
-    height:100%;
-    min-height: 353px;
-    max-height:353px;
-    max-width: 200px;
-    width: 100%;
+    height: 71%;
+    min-height: auto;
+    max-height: auto;
+    max-width: 80%;
+    width: 54%;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-next{
@@ -1265,18 +1346,51 @@ body{
     border-bottom-left-radius: 0;
   }
 
+  .projects-area .projects-container .projects-list .project .text-container-next{
+    position: absolute;
+    bottom:54px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events:none;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-caption-next{
+    opacity:1 !important;
+    background: rgba(0,0,0,.8);
+    height: 50px;
+    align-items: center;
+    top:60%;
+    position:relative;
+  }
+
+  .projects-area .projects-container .projects-list .project .tech-next {
+    opacity: 1 !important;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    top: 68.7%;
+    height:60px;
+    justify-content: center;
+    position:relative;
+  }
+
   .projects-area .projects-container .projects-list .project .project-link-next .project-image-container{
     display: flex;
     justify-content: center;
-    align-items:center;  
   }
 
   .projects-area .projects-container .projects-list .project .project-link-next .project-image-container .project-image{
-    height:100%;
-    min-height: 353px;
-    max-height:353px;
-    max-width: 200px;
-    width: 100%;
+    height: 71%;
+    min-height: auto;
+    max-height: auto;
+    max-width: 80%;
+    width: 54%;
   }
   
   .projects-area .projects-container .projects-list .project .project-link-prev{
@@ -1288,18 +1402,51 @@ body{
     border-bottom-left-radius: 0;  
   }
 
+  .projects-area .projects-container .projects-list .project .text-container-prev{
+    position: absolute;
+    bottom:54px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events:none;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-caption-prev{
+    opacity:1 !important;
+    background: rgba(0,0,0,.8);
+    height: 50px;
+    align-items: center;
+    top:60%;
+    position:relative;
+  }
+
+  .projects-area .projects-container .projects-list .project .tech-prev {
+    opacity: 1 !important;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    top: 68.7%;
+    height:60px;
+    justify-content: center;
+    position:relative;
+  }
+
   .projects-area .projects-container .projects-list .project .project-link-prev .project-image-container{
     display: flex;
     justify-content: center;
-    align-items:center; 
   }
 
   .projects-area .projects-container .projects-list .project .project-link-prev .project-image-container .project-image{
-    height:100%;
-    min-height: 353px;
-    max-height:353px;
-    max-width: 200px;
-    width: 100%;
+    height: 71%;
+    min-height: auto;
+    max-height: auto;
+    max-width: 80%;
+    width: 54%;
   }
 
   

@@ -6,6 +6,9 @@ const projectLinkPrev = document.querySelector('.project-link-prev');
 const projectCaption = document.querySelector('.project-caption');
 const projectCaptionNext = document.querySelector('.project-caption-next')
 const projectCaptionPrev = document.querySelector('.project-caption-prev')
+const projectTech = document.querySelector('.tech');
+const projectTechNext = document.querySelector('.tech-next')
+const projectTechPrev = document.querySelector('.tech-prev')
 const currentProject = document.querySelector('.projects-list .active');
 const nextProject = document.querySelector('.projects-list .next');
 const thirdProject = document.querySelector('.projects-list .third')
@@ -37,26 +40,32 @@ const aboutMenuContact = document.querySelector('.about .menu-bg .menu-links .li
 
 projectLink.addEventListener('mouseover', () => {
     projectCaption.style.opacity = '1'
+    projectTech.style.opacity = '1'
 })
 
 projectLink.addEventListener('mouseleave', () => {
     projectCaption.style.opacity = '0'
+    projectTech.style.opacity = '0'
 })
 
 projectLinkNext.addEventListener('mouseover', () => {
     projectCaptionNext.style.opacity = '1'
+    projectTechNext.style.opacity = '1'
 })
 
 projectLinkNext.addEventListener('mouseleave', () => {
     projectCaptionNext.style.opacity = '0'
+    projectTechNext.style.opacity = '0'
 })
 
 projectLinkPrev.addEventListener('mouseover', () => {
     projectCaptionPrev.style.opacity = '1'
+    projectTechPrev.style.opacity = '1'
 })
 
 projectLinkPrev.addEventListener('mouseleave', () => {
     projectCaptionPrev.style.opacity = '0'
+    projectTechPrev.style.opacity = '0'
 })
 
 upArrow.addEventListener('mousedown', () => {
