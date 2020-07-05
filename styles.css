@@ -1714,6 +1714,30 @@ body{
 
 /* iphone 6+/7+/8+ */
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio: 3){
+  .projects-area .projects-container .projects-list .project .project-link-active .project-image-container .project-image{
+    height: 66%;
+    min-height: auto;
+    max-height: auto;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-next .project-image-container .project-image{
+    height: 66%;
+    min-height: auto;
+    max-height: auto;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .projects-area .projects-container .projects-list .project .project-link-prev .project-image-container .project-image{
+    height: 66%;
+    min-height: auto;
+    max-height: auto;
+    max-width: 200px;
+    width: 100%;
+  }
+
   .projects-area .projects-container .projects-list .project .project-link-active {
   }
 
@@ -1751,6 +1775,30 @@ body{
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3){
+    .projects-area .projects-container .projects-list .project .project-link-active .project-image-container .project-image{
+      height: 66%;
+      min-height: auto;
+      max-height: auto;
+      max-width: 200px;
+      width: 100%;
+    }
+  
+    .projects-area .projects-container .projects-list .project .project-link-next .project-image-container .project-image{
+      height: 66%;
+      min-height: auto;
+      max-height: auto;
+      max-width: 200px;
+      width: 100%;
+    }
+  
+    .projects-area .projects-container .projects-list .project .project-link-prev .project-image-container .project-image{
+      height: 66%;
+      min-height: auto;
+      max-height: auto;
+      max-width: 200px;
+      width: 100%;
+    }
+
   .projects-area .projects-container .projects-list .project .project-link-active {
   }
 
