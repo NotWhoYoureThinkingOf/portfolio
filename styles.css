@@ -1972,20 +1972,20 @@ body{
       width: 100%;
     }
 
-  .projects-area .projects-container .projects-list .project .project-link-active {
-  }
+    .projects-area .projects-container .projects-list .project .project-link-active {
+    }
 
-  .projects-area .projects-container .projects-list .project .project-link-prev {
-  }
+    .projects-area .projects-container .projects-list .project .project-link-prev {
+    }
 
-  .projects-area .projects-container .projects-list .project .project-link-next {
-  }
+    .projects-area .projects-container .projects-list .project .project-link-next {
+    }
 
-  .about .description .personal-description {
-    font-size: 1rem;
-    width: 84%;
-    line-height: 2;
-}
+    .about .description .personal-description {
+      font-size: 1rem;
+      width: 84%;
+      line-height: 2;
+    }
 }
 
 /* iphone 5s */
@@ -2015,3 +2015,32 @@ body{
   }
 }
 
+/* iphone 11 */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+      .projects-area .projects-container .projects-list .project .project-link-next .project-image-container .project-image {
+        height: 66%;
+        min-height: auto;
+        max-height: auto;
+        min-width: 60%;
+        max-width: 247px;
+        width: 100%;
+    }
+     }
+
+/* iphone 11 pro max */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      .projects-area .projects-container .projects-list .project .project-link-next .project-image-container .project-image {
+        height: 66%;
+        min-height: auto;
+        max-height: auto;
+        min-width: 60%;
+        max-width: 200px;
+        width: 100%;
+    }
+     }
